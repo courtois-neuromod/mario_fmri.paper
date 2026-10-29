@@ -1,0 +1,11 @@
+[project]
+name = "mario-fmri-paper"
+version = "0.1.0"
+description = "CNeuromod Mario data descriptor (Scientific Data)"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter-book>=2.0",
+]
+
+[dependency-groups]
+dev = []

@@ -1,0 +1,71 @@
+version: 1
+project:
+  title: "CNeuromod Mario: a large-scale longitudinal fMRI dataset of naturalistic videogame play"
+  github: https://github.com/courtois-neuromod/mario_fmri.paper
+  keywords:
+    - fMRI
+    - Open Dataset
+    - Naturalistic Gameplay
+    - Super Mario Bros.
+    - Skill learning
+  # Shared with the LaTeX manuscript (main.tex).
+  bibliography:
+    - references.bib
+  plugins:
+    - references.mjs
+  numbering:
+    figure:
+      continue: true
+    table:
+      continue: true
+  exports:
+    - format: pdf
+      template: lapreprint
+      output: exports/mario_fmri_paper.pdf
+      # Kept here rather than in project.authors, which MyST would show in every page header.
+      # Keep in sync with the author table in paper/index.md and with main.tex.
+      authors:
+        - name: Yann Harel
+          orcid: 0000-0002-8970-1983
+          corresponding: true
+          email: yharel109@gmail.com
+          affiliations: [criugm, udem]
+        - name: Basile Pinsard
+          orcid: 0000-0002-4391-3075
+          affiliations: [criugm, udem]
+        - name: Julie A. Boyle
+          orcid: 0000-0001-5927-221X
+          affiliations: [criugm, udem]
+        - name: Lune Bellec
+          orcid: 0000-0002-9111-0699
+          affiliations: [criugm, udem]
+      affiliations:
+        - id: criugm
+          name: Centre de Recherche de l'Institut Universitaire de Gériatrie de Montréal, Montréal, QC, Canada
+        - id: udem
+          name: Université de Montréal, Montréal, QC, Canada
+      # Every toc file except paper/references.md (the PDF has its own bibliography).
+      # Keep in sync with the toc below.
+      articles:
+        - paper/index.md
+        - paper/background.md
+        - paper/methods.md
+        - paper/data_records.md
+        - paper/technical_validation.md
+        - paper/usage_notes.md
+        - paper/acknowledgements.md
+  toc:
+    - file: paper/index.md
+    - file: paper/background.md
+    - file: paper/methods.md
+    - file: paper/data_records.md
+    - file: paper/technical_validation.md
+    - file: paper/usage_notes.md
+    - file: paper/acknowledgements.md
+    - file: paper/references.md
+
+site:
+  template: book-theme
+  title: CNeuromod Mario
+  options:
+    style: site.css
