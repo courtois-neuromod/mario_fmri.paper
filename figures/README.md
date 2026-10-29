@@ -17,5 +17,8 @@ or copy them here from `{FIG_PATH}/paper/`, keeping the file names:
 | `fig2_signal_quality.{pdf,png}` | Figure 2 |
 | `fig3_validation.{pdf,png}` | Figure 3 |
 
-The LaTeX manuscript (`main.tex`) includes the PDFs; the MyST book (`paper/*.md`) includes the
-PNGs. A missing PDF renders as a red placeholder box, so `main.tex` still compiles without them.
+The LaTeX manuscript (`main.tex`) uses the PDF when present, else the PNG; the MyST book
+(`paper/*.md`) uses the PNGs. A figure with neither renders as a red placeholder box in `main.tex`.
+
+The PNGs currently here are placeholders (2026-10-29 exports); replace them, and add the PDFs,
+when the final figures are ready.
