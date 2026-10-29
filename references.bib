@@ -1,0 +1,125 @@
+% =====================================================================
+% References for the CNeuromod Mario data paper.
+% NOTE: a few entries (CCN abstract, in-prep shinobi pipeline paper) are
+% best-effort; verify volume/page/DOI details before submission. Entries
+% flagged "VERIFY" should be double-checked.
+% =====================================================================
+
+% --- Dataset & CNeuromod ------------------------------------------------
+
+@article{paugam2025mario,
+  title   = {A large-scale longitudinal {fMRI} dataset of naturalistic {Super Mario Bros.} gameplay and an associated modelling study},
+  author  = {Paugam, Fran{\c{c}}ois and Harel, Yann and Pinsard, Basile and Boyle, Julie A. and Bellec, Pierre},
+  journal = {bioRxiv},
+  year    = {2025},
+  doi     = {10.1101/2025.11.28.691119},
+  note    = {VERIFY author list/title against the posted preprint}
+}
+
+@misc{cneuromod2025,
+  title        = {The {Courtois NeuroMod} project: dense {fMRI} data for neural modelling},
+  author       = {Bellec, Pierre and Boyle, Julie A. and Pinsard, Basile and others},
+  year         = {2025},
+  howpublished = {Zenodo},
+  doi          = {10.5281/zenodo.8147300},
+  url          = {https://docs.cneuromod.ca}
+}
+
+@misc{boyle2025ccn,
+  title        = {{CNeuroMod} Data Collection Complete: 200h of individual {fMRI} across diverse naturalistic and controlled tasks to build {NeuroAI} models},
+  author       = {Boyle, Julie A. and Pinsard, Basile and others},
+  year         = {2025},
+  howpublished = {Conference on Cognitive Computational Neuroscience (CCN), abstract},
+  url          = {https://2025.ccneuro.org/}
+}
+
+@article{harel2023controller,
+  title   = {An open-source fiber-optic magnetic-resonance-compatible video-game controller},
+  author  = {Harel, Yann and others},
+  journal = {PLOS ONE},
+  volume  = {18},
+  number  = {9},
+  pages   = {e0290158},
+  year    = {2023},
+  doi     = {10.1371/journal.pone.0290158},
+  note    = {VERIFY author list}
+}
+
+@misc{harel2025shinobi,
+  title        = {{shinobi\_fmri}: an annotation-based {GLM}/{MVPA} pipeline for naturalistic video-game {fMRI}},
+  author       = {Harel, Yann and Pinsard, Basile and Boyle, Julie A. and Bellec, Pierre},
+  year         = {2025},
+  howpublished = {In preparation; software at \url{https://github.com/courtois-neuromod/shinobi_fmri}}
+}
+
+% --- Acquisition & preprocessing ---------------------------------------
+
+@article{esteban2019fmriprep,
+  title   = {{fMRIPrep}: a robust preprocessing pipeline for functional {MRI}},
+  author  = {Esteban, Oscar and Markiewicz, Christopher J. and Blair, Ross W. and Moodie, Craig A. and Isik, A. Ilkay and Erramuzpe, Asier and Kent, James D. and Goncalves, Mathias and DuPre, Elizabeth and Snyder, Madeleine and others},
+  journal = {Nature Methods},
+  volume  = {16},
+  number  = {1},
+  pages   = {111--116},
+  year    = {2019},
+  doi     = {10.1038/s41592-018-0235-4}
+}
+
+@article{glasser2016hcp,
+  title   = {The {Human Connectome Project's} neuroimaging approach},
+  author  = {Glasser, Matthew F. and Smith, Stephen M. and Marcus, Daniel S. and Andersson, Jesper L. R. and Auerbach, Edward J. and Behrens, Timothy E. J. and Coalson, Timothy S. and Harms, Michael P. and Jenkinson, Mark and Moeller, Steen and others},
+  journal = {Nature Neuroscience},
+  volume  = {19},
+  number  = {9},
+  pages   = {1175--1187},
+  year    = {2016},
+  doi     = {10.1038/nn.4361}
+}
+
+@article{xu2013multiband,
+  title   = {Evaluation of slice accelerations using multiband echo planar imaging at 3{T}},
+  author  = {Xu, Junqian and Moeller, Steen and Auerbach, Edward J. and Strupp, John and Smith, Stephen M. and Feinberg, David A. and Yacoub, Essa and U{\u{g}}urbil, Kamil},
+  journal = {NeuroImage},
+  volume  = {83},
+  pages   = {991--1001},
+  year    = {2013},
+  doi     = {10.1016/j.neuroimage.2013.07.055}
+}
+
+% --- Software & standards ----------------------------------------------
+
+@article{abraham2014nilearn,
+  title   = {Machine learning for neuroimaging with scikit-learn},
+  author  = {Abraham, Alexandre and Pedregosa, Fabian and Eickenberg, Michael and Gervais, Philippe and Mueller, Andreas and Kossaifi, Jean and Gramfort, Alexandre and Thirion, Bertrand and Varoquaux, Ga{\"e}l},
+  journal = {Frontiers in Neuroinformatics},
+  volume  = {8},
+  pages   = {14},
+  year    = {2014},
+  doi     = {10.3389/fninf.2014.00014}
+}
+
+@article{pedregosa2011sklearn,
+  title   = {Scikit-learn: Machine learning in {Python}},
+  author  = {Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  journal = {Journal of Machine Learning Research},
+  volume  = {12},
+  pages   = {2825--2830},
+  year    = {2011}
+}
+
+@article{gorgolewski2016bids,
+  title   = {The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments},
+  author  = {Gorgolewski, Krzysztof J. and Auer, Tibor and Calhoun, Vince D. and Craddock, R. Cameron and Das, Samir and Duff, Eugene P. and Flandin, Guillaume and Ghosh, Satrajit S. and Glatard, Tristan and Halchenko, Yaroslav O. and others},
+  journal = {Scientific Data},
+  volume  = {3},
+  pages   = {160044},
+  year    = {2016},
+  doi     = {10.1038/sdata.2016.44}
+}
+
+@misc{openai2018gymretro,
+  title        = {Gym {Retro}},
+  author       = {Nichol, Alex and Pfau, Vicki and Hesse, Christopher and Klimov, Oleg and Schulman, John},
+  year         = {2018},
+  howpublished = {OpenAI; \url{https://github.com/openai/retro}}
+}

@@ -1,0 +1,22 @@
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+
+# MyST build outputs
+_build/
+exports/
+
+# LaTeX build artefacts (Overleaf compiles from source)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+/main.pdf
+
+.DS_Store
